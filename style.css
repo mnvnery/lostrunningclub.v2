@@ -25,7 +25,6 @@ body {
 }
 
 
-
 .sectionmargin {
   margin: 1rem 1.5rem 0 1.5rem;
 }
@@ -115,7 +114,7 @@ h5 {
 }
 
 .smaller-info p {
-  font-size: 1.7vw;
+  font-size: 2.2vw;
   margin-bottom: 0.7rem;
 }
 
@@ -322,6 +321,10 @@ h5 {
   .footer-margins {
   margin: 2rem 2.5rem !important;
   }
+
+  #svg {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -404,6 +407,7 @@ h5 {
 
   p {
    font-size: 1.8vw;
+   line-height: 2.5vw;
   }
 
   h2 {
@@ -422,6 +426,7 @@ h5 {
   }
 
   .smaller-info p {
+    font-size: 1.5vw;
     margin-bottom: 2vw;
   }
 

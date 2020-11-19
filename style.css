@@ -126,6 +126,15 @@ h5 {
 .thirteenmile, .threemile, .mind{
   display: none;
 }
+
+a {
+  color: #002DFB;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
 /* --------- IMAGES --------- */
 
 .titleimg {
@@ -219,6 +228,7 @@ h5 {
   right:  7vw;
   margin-top: -10%;
 }
+
 .noma {
  width: 25vw;
  margin-bottom:0.3rem;
@@ -306,6 +316,7 @@ h5 {
   text-align: center;
   margin: 0;
   padding: 1rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -333,11 +344,13 @@ h5 {
 
   /* --------- LAYOUT --------- */
 
+
   .mobile-flex {
     display: block;
     text-align: center;
-    margin-top: 18vh;
-    height: 65vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 100%;
   }
 
   .break {
@@ -399,7 +412,7 @@ h5 {
   }
 
   #footer {
-    margin-top: 30vh;
+    margin-top: 15%;
   }
 
   .margin-text {
@@ -414,12 +427,12 @@ h5 {
 
   h2 {
     font-size: 8vw;
-    line-height: 14vh;
+    line-height: 7vw;
   }
 
   h1 {
     font-size: 7vw;
-    line-height: 14vh;
+    line-height: 7vw;
   }
 
   h5 {
@@ -445,6 +458,9 @@ h5 {
     font-size: 1.8vw;
   }
 
+  #countdown {
+    font-size: 1.5vw;
+  }
 
   /* --------- IMAGES --------- */
 
@@ -506,21 +522,24 @@ h5 {
 .absoluteposition {
   position: absolute;
   left: 15vw;
-  margin-top: -5vh;
+  margin-top: -3%;
   width: 20vw !important;
 
 }
 
 .lrc {
-  width: 25vw;
+  width: 22vw;
   right:  18vw;
-  margin-top: 0;
-
+  margin-top: 3.5%;
 }
 
 .instaicon {
   width: 3vw;
   margin-bottom: 3rem;
+}
+
+.instaicon path:hover {
+  fill: #002DFB ;
 }
 
 .noma {
@@ -530,7 +549,7 @@ h5 {
 /* --------- BUTTONS --------- */
 
   .mobileenterbutton {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     border-width: 2px;
     padding: 1.5vh 4vw;
     overflow: hidden;
@@ -630,8 +649,12 @@ h5 {
     height: auto;
   }
 
+
 }
 
+@media only screen and (min-width: 900px) {
+
+}
 
 
 

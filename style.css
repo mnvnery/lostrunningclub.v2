@@ -243,6 +243,8 @@ h5 {
   font-size: 0.9rem;
   line-height: 1.1rem;
 }
+
+
 .whiteversion {
   color: white;
   border: 1.5px solid white;
@@ -531,7 +533,31 @@ h5 {
     margin-top: 4rem;
     border-width: 2px;
     padding: 0.5rem 1.7rem;
+    overflow: hidden;
   }
+
+  button:hover p {
+    opacity: 0;
+    transform: translate(100%,0);
+  }
+  button p {
+    transition: all .1s ease-in-out;
+  }
+
+  button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      font-size: 1.8vw;
+      margin-top: 0.8vh;
+      opacity: 0;
+      transform: translate(-10%,0);
+      transition: all .1s ease-in-out;
+    }
+
+    button:hover{cursor: pointer}
 
 /* --------- CARROUSEL --------- */
 

@@ -532,10 +532,11 @@ h5 {
   .mobileenterbutton {
     margin-top: 4rem;
     border-width: 2px;
-    padding: 0.5rem 1.7rem;
+    padding: 1.5vh 4vw;
     overflow: hidden;
+    border-radius: 45px;
   }
-
+/*
   button:hover p {
     opacity: 0;
     transform: translate(100%,0);
@@ -558,6 +559,7 @@ h5 {
     }
 
     button:hover{cursor: pointer}
+*/
 
 /* --------- CARROUSEL --------- */
 
@@ -629,7 +631,6 @@ h5 {
   }
 
 }
-
 
 
 

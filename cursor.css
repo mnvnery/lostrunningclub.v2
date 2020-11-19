@@ -1,0 +1,29 @@
+
+h3 {
+  color: #DBB67C;
+}
+
+// cursor trail
+
+.container {
+  cursor: none !important;
+}
+
+#svg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#polyline {
+  z-index: 1000;
+  stroke-dasharray: 0;
+  stroke-width: 3;
+  stroke-linecap: square;
+  stroke: #DBB67C;
+}
+

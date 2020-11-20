@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="cursor.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="cursor.js"></script>
-  <script src="countdown.js"></script>
+  <script src="countdown.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lost Running Club</title>
   <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+  <script src="scroll.js" defer></script>
 </head>
 <body>
 <div id="countdown"></div>
@@ -90,7 +91,7 @@
 
   <div class="center-container margin-text">
     <h1 style="color: white">WHERE <br> THE HELL DO YOU <br> THINK YOU’RE <br> GOING?</h1>
-    <img src="images/text.gif" alt="" class="pathtext">
+    <img src="images/text2.gif" alt="" class="pathtext">
   </div>
 
   <div class="grid-container">
@@ -146,10 +147,10 @@
       <img class="d-block w-100" src="images/award1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/award1.jpg" alt="Second slide">
+      <img class="d-block w-100" src="images/award2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/award1.jpg" alt="Third slide">
+      <img class="d-block w-100" src="images/award3.jpg" alt="Third slide">
     </div>
   </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -196,6 +197,7 @@
  <hr/>
  <div class="d-flex justify-content-around m-3 medium-info">
    <p>Email: <a href="mailto:hello@lostrunning.club">hello@lostrunning.club</a></p>
+   <p id="topBtn">Back to top ↑</p>
    <p>We'll stop when we're tired</p>
  </div>
 </div>

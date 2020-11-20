@@ -135,6 +135,10 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+
+#topBtn:hover {
+  color: white;
+}
 /* --------- IMAGES --------- */
 
 .titleimg {
@@ -555,30 +559,9 @@ a:hover {
     overflow: hidden;
     border-radius: 45px;
   }
-/*
-  button:hover p {
-    opacity: 0;
-    transform: translate(100%,0);
-  }
-  button p {
-    transition: all .1s ease-in-out;
-  }
 
-  button:hover:before{opacity: 1; transform: translate(0,0);}
-    button:before{
-      content: attr(data-hover);
-      position: absolute;
-      left: 0;
-      width: 100%;
-      font-size: 1.8vw;
-      margin-top: 0.8vh;
-      opacity: 0;
-      transform: translate(-10%,0);
-      transition: all .1s ease-in-out;
-    }
 
-    button:hover{cursor: pointer}
-*/
+
 
 /* --------- CARROUSEL --------- */
 
@@ -652,9 +635,6 @@ a:hover {
 
 }
 
-@media only screen and (min-width: 900px) {
-
-}
 
 
 

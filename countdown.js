@@ -31,3 +31,15 @@ var x = setInterval(function() {
 //   let scroll = window.pageYOffset;
 //  console.log(scroll);
 // })
+const scrollBtn = document.getElementById("topBtn")
+const rootElement = document.documentElement
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+console.log(scrollBtn)
+scrollBtn.addEventListener("click", scrollToTop)
+

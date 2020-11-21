@@ -123,10 +123,6 @@ h5 {
   margin-bottom: 0.8rem;
 }
 
-.thirteenmile, .threemile, .mind{
-  display: none;
-}
-
 a {
   color: #002DFB;
   text-decoration: none;
@@ -258,6 +254,10 @@ a:hover {
   line-height: 1.1rem;
 }
 
+.mobileenterbutton a:hover {
+  color: #002DFB;
+  text-decoration: none;
+}
 
 .whiteversion {
   color: white;
@@ -343,6 +343,33 @@ a:hover {
     display: none;
   }
 }
+
+/* --------- HOVERS --------- */
+  .thirteenmile, .threemile, .mind  {
+    display: none;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .thirteenmile-hover:hover + .thirteenmile {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
+
+  .threemile-hover:hover + .threemile {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
+
+  .mind-hover:hover + .mind {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
+
+
 
 @media only screen and (min-width: 900px) {
 
@@ -558,83 +585,83 @@ a:hover {
     padding: 1.5vh 4vw;
     overflow: hidden;
     border-radius: 45px;
+    position: relative;
+    min-width: 500px;
   }
+   button:hover p {
+      opacity: 0;
+      transform: translate(100%,0);
+    }
+    button p {
+      transition: all .15s ease-in-out;
+    }
 
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+      button:before{
+        content: attr(data-hover);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transform: translate(-10%,0);
+        transition: all .15s ease-in-out;
+        margin-bottom: 0.9rem;
+        margin-top: 0.9rem;
+        font-size: 1.8vw;
+        line-height: 1.1rem;
+      }
+
+      button:hover{cursor: pointer}
 
 
 
 /* --------- CARROUSEL --------- */
 
 
-.carousel-indicators {
-  bottom: -35px;
-  justify-content: flex-start;
-  margin-left: 0%;
-}
-
-.carousel-indicators .active {
-  background-color: transparent;
-  border: 1px solid #002DFB;
-  opacity: 1;
-}
-.carousel-indicators li {
-  background-color: #002DFB;
-  opacity: 1;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(images/arrow-left-s-fill.svg);
-  height: 95px;
-  width: 95px;
-}
-
-.carousel-control-next-icon {
-  background-image: url(images/arrow-right-s-fill.svg);
-  height: 95px;
-  width:95px;
-}
-
-.carousel-control-prev {
-  right: 3vw;
-  left: auto;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  opacity: 1;
-  top: auto;
-  bottom: 5vh;
-  width: 5%;
-  margin-right: 5vw;
-}
-
-/* --------- HOVERS --------- */
-  .thirteenmile, .threemile, .mind  {
-    display: block;
-    height: 0;
-    overflow: hidden;
+  .carousel-indicators {
+    bottom: -35px;
+    justify-content: flex-start;
+    margin-left: 0%;
   }
 
-  .thirteenmile-hover:hover + .thirteenmile {
+  .carousel-indicators .active {
+    background-color: transparent;
+    border: 1px solid #002DFB;
     opacity: 1;
-    height: auto;
   }
-
-  .threemile-hover:hover + .threemile {
+  .carousel-indicators li {
+    background-color: #002DFB;
     opacity: 1;
-    height: auto;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
   }
 
-  .mind-hover:hover + .mind {
+  .carousel-control-prev-icon {
+    background-image: url(images/arrow-left-s-fill.svg);
+    height: 95px;
+    width: 95px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url(images/arrow-right-s-fill.svg);
+    height: 95px;
+    width:95px;
+  }
+
+  .carousel-control-prev {
+    right: 3vw;
+    left: auto;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
     opacity: 1;
-    height: auto;
+    top: auto;
+    bottom: 5vh;
+    width: 5%;
+    margin-right: 5vw;
   }
-
 
 }
-
-
 
 

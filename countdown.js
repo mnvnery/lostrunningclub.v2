@@ -27,10 +27,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// window.addEventListener('scroll', () => {
-//   let scroll = window.pageYOffset;
-//  console.log(scroll);
-// })
+// Scroll back to top
 const scrollBtn = document.getElementById("topBtn")
 const rootElement = document.documentElement
 
@@ -40,6 +37,8 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
-console.log(scrollBtn)
 scrollBtn.addEventListener("click", scrollToTop)
+
+// Click on mobile
+
 

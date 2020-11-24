@@ -240,6 +240,9 @@ a:hover {
  margin-bottom:0.3rem;
 }
 
+.flagimg {
+  width: 44vw;
+}
 /* --------- BUTTONS --------- */
 
 .mobileenterbutton {
@@ -269,6 +272,11 @@ a:hover {
   color: white;
   border: 1.5px solid white;
   width: 40%;
+}
+
+.middlebtn {
+  width: 40%;
+  margin: 5vw;
 }
 /* --------- CARROUSEL --------- */
 
@@ -532,7 +540,7 @@ a:hover {
 
   .octopusimg {
     display: block;
-    width: 45vw;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -584,6 +592,12 @@ a:hover {
   width: 12vw;
 }
 
+.flagimg {
+  object-fit: cover;
+  width: 48vw;
+  height: 50vw
+}
+
 /* --------- BUTTONS --------- */
 
   .mobileenterbutton {
@@ -613,8 +627,8 @@ a:hover {
         opacity: 0;
         transform: translate(-10%,0);
         transition: all .15s ease-in-out;
-        margin-bottom: 0.9rem;
-        margin-top: 0.9rem;
+        margin-bottom: 0.7rem;
+        margin-top: 0.7rem;
         font-size: 1.8vw;
         line-height: 1.1rem;
       }
@@ -674,4 +688,12 @@ a:hover {
 
 }
 
+@media only screen and (min-width: 1920px) {
+  .mobileenterbutton p{
+    font-size: 1.5vw;
+  }
 
+  button:before {
+    font-size: 1.5vw;
+  }
+}

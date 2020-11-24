@@ -696,4 +696,14 @@ a:hover {
   button:before {
     font-size: 1.5vw;
   }
+
+  #countdown {
+    font-size: 1.2vw;
+  }
+
+  .flagimg {
+    width: 49vw;
+    height: 48vw
+  }
+
 }

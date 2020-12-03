@@ -31,7 +31,8 @@ body {
   font-weight: 600;
 }
 
-.desktop-break {
+.desktop-
+eak {
   display: none;
 }
 
@@ -67,7 +68,8 @@ body {
     margin-right: 7em;
   }
 
-  .desktop-break {
+  .desktop-
+  eak {
     display: block;
   }
 
@@ -82,6 +84,7 @@ body {
 }
 
 @media only screen and (min-width: 2000px) {
+
   .logo {
       width: 110%;
       margin-right:15rem;
@@ -92,7 +95,8 @@ body {
     margin-right: 15rem;
   }
 
-  .desktop-break {
+  .desktop-
+  eak {
     display: block;
   }
 

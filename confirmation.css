@@ -1,0 +1,109 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  background-color: #FFDCD8;
+  margin: 0;
+}
+
+#countdown {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #1D1D1B;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.logo {
+  width: 45%;
+  display: block;
+  margin: 4rem auto 2.5rem auto;
+}
+
+.info {
+  color:#002DFB;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 2rem;
+}
+
+.launching {
+  font-weight: 600;
+}
+
+.desktop-break {
+  display: none;
+}
+
+.insta-link {
+  text-decoration: none;
+  color:#002DFB;
+}
+
+.insta-link:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+
+  body{
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    overflow: hidden;
+
+  }
+
+  .info {
+    text-align: left;
+    font-size: 1.7vw;
+  }
+
+  .launching {
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .logo {
+    width: 110%;
+    margin: 0;
+    margin-right: 7em;
+  }
+
+  .desktop-break {
+    display: block;
+  }
+
+  .logo-link {
+    width: 20%;
+    margin-right: 7rem;
+  }
+
+  #polyline {
+    stroke: red !important;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+
+  .logo {
+      width: 110%;
+      margin-right:15rem;
+  }
+
+  .logo-link {
+    width: 20%;
+    margin-right: 15rem;
+  }
+
+  .desktop-
+  eak {
+    display: block;
+  }
+
+}

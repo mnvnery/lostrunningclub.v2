@@ -1,3 +1,4 @@
+
 /* --------- LAYOUT ---------*/
 
 .fullpage {
@@ -25,14 +26,13 @@ body {
 }
 
 
-
 .sectionmargin {
   margin: 1rem 1.5rem 0 1.5rem;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr;
   grid-gap:3rem;
   grid-template-areas:
@@ -40,15 +40,6 @@ body {
   margin: 2.5rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap:3rem;
-  grid-template-areas:
-    ". .";
-  margin: 2.5rem;
-}
 
 .grid-container-mobile {
 
@@ -78,10 +69,6 @@ body {
   text-align: left;
 }
 
-hr {
-  border-color: rgba(0,45,251,0.5);
-  margin: 1rem 2.5rem;
-}
 
 .desktop-break {
   display: none;
@@ -90,6 +77,12 @@ hr {
 
 .margin-text {
     margin-top: 2rem;
+}
+
+.container-members {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* --------- FONTS --------- */
@@ -103,8 +96,9 @@ h1 {
 
 h2 {
   font-family: 'Anton', sans-serif;
-  line-height: 1.7rem;
-  font-size: 2.2rem;
+  line-height: 2.8rem;
+  font-size: 2.5rem;
+  color: white;
 }
 
 h5 {
@@ -115,7 +109,7 @@ h5 {
 }
 
 .smaller-info p {
-  font-size: 1.7vw;
+  font-size: 2.2vw;
   margin-bottom: 0.7rem;
 }
 
@@ -124,87 +118,23 @@ h5 {
   margin-bottom: 0.8rem;
 }
 
-.thirteenmile, .threemile, .mind{
-  display: none;
+a {
+  color: #002DFB;
+  text-decoration: none;
 }
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
 /* --------- IMAGES --------- */
 
-.titleimg {
-  width: 35%;
-  height: auto;
-  margin-right: 1.2rem;
-}
-
-.dateimg {
-  width: 103%;
-  height: auto;
-}
-
-.worm {
-  position: absolute;
-  margin-top: -88%;
-  width: 50%;
-  z-index: 16;
-  left: 7%;
-  height: auto;
-  mix-blend-mode: multiply;
-
-}
-
-.squiggleimg {
-  mix-blend-mode: multiply;
-  width: 60%;
-  margin-top: 0.3rem;
-  height: auto;
-}
-
-.pathtext {
-  width: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -115%);
-  height: auto;
-}
-
-.squiggle2img {
-  width: 80%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -55%);
-  height: auto;
-  z-index: 25;
-}
-
-.octopusimg {
-  display: block;
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tshirtimg {
-  float: right;
-  object-fit: cover;
-  width: 110%;
-  height: 130%;
-}
-
-.tshirtimg-left {
-  float: left;
-  width: 120%;
-  height: auto;
-}
 
 .snailimg {
   display: none;
 }
 
-.mosquito {
-  width: 30vw;
-  margin-left: -12vw;
-
-}
 
 .absoluteposition {
   position: absolute;
@@ -220,83 +150,11 @@ h5 {
   right:  7vw;
   margin-top: -10%;
 }
+
 .noma {
  width: 25vw;
  margin-bottom:0.3rem;
 }
-
-/* --------- BUTTONS --------- */
-
-.mobileenterbutton {
-  font-family: 'Space Grotesk', sans-serif;
-  color: #002DFB;
-  border: 1.5px solid #002DFB;
-  border-radius: 35px;
-  text-align: center;
-  background-color: transparent;
-  width: 40%;
-  padding: 0 1.7rem;
-  font-size: 0.9rem;
-}
-.mobileenterbutton p {
-  margin-bottom: 0.9rem;
-  margin-top: 0.9rem;
-  font-size: 0.9rem;
-  line-height: 1.1rem;
-}
-.whiteversion {
-  color: white;
-  border: 1.5px solid white;
-}
-/* --------- CARROUSEL --------- */
-
-.carousel {
-  margin: 1.2rem;
-
-}
-
-.carousel-indicators {
-  bottom: -35px;
-  justify-content: flex-start;
-  margin-left: 0%;
-}
-
-.carousel-indicators .active {
-  background-color: transparent;
-  border: 1px solid #002DFB;
-  opacity: 1;
-}
-.carousel-indicators li {
-  background-color: #002DFB;
-  opacity: 1;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(images/arrow-left-s-fill.svg);
-  height: 40px;
-  width: 40px;
-}
-
-.carousel-control-next-icon {
-  background-image: url(images/arrow-right-s-fill.svg);
-  height: 40px;
-  width: 40px;
-}
-
-.carousel-control-prev {
-  right: 6vw;
-  left: auto;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  opacity: 1;
-  top: auto;
-  bottom: 1vh;
-}
-/* --------- COUNTDOWN ---------*/
 
 #countdown {
   font-family: 'Space Grotesk', sans-serif;
@@ -304,8 +162,99 @@ h5 {
   color: white;
   text-align: center;
   margin: 0;
-  padding: 1rem;
+  padding: 1.2rem 15rem;
+  display: flex;
+  justify-content: space-between;
 }
+
+.logo {
+  width: 50%;
+  display: block;
+  margin: 4rem auto 2.5rem auto;
+}
+
+.logo-members {
+  width: 50%;
+  display: block;
+}
+
+.info {
+  color:#002DFB;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.members-btn {
+  border: solid 1px white;
+  border-radius: 30px;
+  padding: 0 2rem;
+  color: white;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+.blue-border {
+  border-bottom: 1px solid #002DFB;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.signup-btn {
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  background-color: #002DFB;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.signup-btn:hover {
+  background-color: white;
+  color:#002DFB;
+}
+
+#mailchimp {
+  text-align: center;
+  margin-top: 3.5rem;
+  cursor: pointer !important;
+}
+  #mailchimp input {
+    border: 1px solid white ;
+    color: #002DFB !important;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    width: 250px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
+  }
+    #mailchimp input.email {background: transparent;}
+    #mailchimp input.password {background: transparent; width: 480px; margin-bottom: 9rem;}
+    #mailchimp input::placeholder {color:#002DFB;}
+    #mailchimp input.name { background: #fff}
+    #mailchimp input[type="submit"] {
+      background:  #fff;
+      color: #002DFB;
+      cursor: pointer;
+      font-size: 11px;
+      width: 18%;
+      padding: 8px 0;
+      -webkit-appearance: none;
+    }
+      #mailchimp input[type="submit"]:hover { color: #F2C94C }
+
 
 @media only screen and (max-width: 900px) {
   .grid-container-mobile {
@@ -319,20 +268,72 @@ h5 {
     margin: 0.8rem 2.5rem;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    grid-template-areas: ". .";
+    margin: 2.5rem;
+  }
+
   .footer-margins {
   margin: 2rem 2.5rem !important;
   }
+
+  #svg {
+    display: none;
+  }
+
+  #countdown {
+    padding: 1rem 1rem;
+  }
+  .container-members {
+    width: 70%;
+  }
+
+  .event {
+    display: block;
+  }
+
+  .title-date {
+    margin-bottom: 1.5rem;
+  }
+
+  .smaller-info {
+    text-align: left;
+  }
+
+  .logo-members {
+    width: 65%;
+    display: block;
+    margin: 4rem auto 2.5rem auto;
+  }
+  .bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  #mailchimp input.password {background: transparent; width: 280px; margin-bottom: 10px}
 }
+
 
 @media only screen and (min-width: 900px) {
 
   /* --------- LAYOUT --------- */
+  .bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 8rem;
+  }
 
   .mobile-flex {
     display: block;
     text-align: center;
-    margin-top: 18vh;
-    height: 65vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 100%;
   }
 
   .break {
@@ -344,17 +345,13 @@ h5 {
   }
 
   .grid-container {
-    margin: 15vh 10vw;
+    margin: 15vh 10vw 0 10vw;
   }
 
   .grid-container-mobile {
     display: block;
     float: right;
     margin-top: 35vh;
-  }
-
-  .carousel {
-    margin: 5vh 10vw;
   }
 
   .desktop-flex {
@@ -394,7 +391,7 @@ h5 {
   }
 
   #footer {
-    margin-top: 30vh;
+    margin-top: 10%;
   }
 
   .margin-text {
@@ -404,16 +401,18 @@ h5 {
 
   p {
    font-size: 1.8vw;
+   line-height: 2.5vw;
   }
 
   h2 {
-    font-size: 8vw;
-    line-height: 14vh;
+    font-size: 5vw;
+    line-height: 7vw;
+    color: white;
   }
 
   h1 {
     font-size: 7vw;
-    line-height: 14vh;
+    line-height: 7vw;
   }
 
   h5 {
@@ -421,185 +420,119 @@ h5 {
     margin-bottom: 2vw;
   }
 
-  .smaller-info p {
+  .smaller-info {
+    font-size: 1.5vw;
     margin-bottom: 2vw;
+    text-align: left;
   }
 
   .medium-info p {
     font-size: 1.7vw;
   }
 
-  .category {
-    margin-top: 5rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .mobileenterbutton p {
-    font-size: 1.8vw;
-  }
-
-
   /* --------- IMAGES --------- */
 
-  .titleimg {
-    margin-right: 0;
-  }
-
-  .dateimg {
-    width: 170%;
-    flex-shrink: 0;
-  }
-
-  .worm {
-    margin-top: 15vh;
-    width: 35%;
-    left: 60%;
-
-  }
-
-
-  .pathtext {
-    width: 37%;
-  }
-
-  .squiggle2img {
-    width: 50%;
-    transform: translate(-70%, -80%);
-    z-index: 17;
-  }
-
-
-  .octopusimg {
-    display: block;
-    width: 45vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-  }
-
-  .mosquito {
-    margin-top: -15vh;
-  }
-
-  .tshirtimg {
-    width: 50vw;
-    height: 70vh;
-  }
-
-  .tshirtimg-left {
-    width: 50vw;
-    margin-right: 2rem;
-  }
 
   .snailimg {
     display: block;
     width: 25vw;
   }
 
-.absoluteposition {
-  position: absolute;
-  left: 15vw;
-  margin-top: -5vh;
-  width: 20vw !important;
+  .absoluteposition {
+    position: absolute;
+    left: 15vw;
+    margin-top: -5%;
+    width: 17vw !important;
 
-}
-
-.lrc {
-  width: 25vw;
-  right:  18vw;
-  margin-top: 0;
-
-}
-
-.instaicon {
-  width: 3vw;
-  margin-bottom: 3rem;
-}
-
-.noma {
-  width: 12vw;
-}
-
-/* --------- BUTTONS --------- */
-
-  .mobileenterbutton {
-    margin-top: 4rem;
-    border-width: 2px;
-    padding: 0.5rem 1.7rem;
   }
 
-/* --------- CARROUSEL --------- */
-
-
-.carousel-indicators {
-  bottom: -35px;
-  justify-content: flex-start;
-  margin-left: 0%;
-}
-
-.carousel-indicators .active {
-  background-color: transparent;
-  border: 1px solid #002DFB;
-  opacity: 1;
-}
-.carousel-indicators li {
-  background-color: #002DFB;
-  opacity: 1;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(images/arrow-left-s-fill.svg);
-  height: 95px;
-  width: 95px;
-}
-
-.carousel-control-next-icon {
-  background-image: url(images/arrow-right-s-fill.svg);
-  height: 95px;
-  width:95px;
-}
-
-.carousel-control-prev {
-  right: 3vw;
-  left: auto;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  opacity: 1;
-  top: auto;
-  bottom: 5vh;
-  width: 5%;
-  margin-right: 5vw;
-}
-
-/* --------- HOVERS --------- */
-  .thirteenmile, .threemile, .mind  {
-    display: block;
-    height: 0;
-    overflow: hidden;
+  .lrc {
+    width: 17vw;
+    right:  18vw;
+    margin-top: 0.5%;
   }
 
-  .thirteenmile-hover:hover + .thirteenmile {
-    opacity: 1;
-    height: auto;
+  .noma {
+    width: 12vw;
   }
 
-  .threemile-hover:hover + .threemile {
-    opacity: 1;
-    height: auto;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+
   }
 
-  .mind-hover:hover + .mind {
-    opacity: 1;
-    height: auto;
+  .info {
+    text-align: left;
+    font-size: 3vw;
+  }
+
+  .launching {
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 25%;
+    margin: 0;
+    margin-right: 7em;
+  }
+
+  .logo-members {
+    width: 40%;
+    margin: 3rem auto;
+  }
+
+  #mailchimp .mc-field-group,
+  #mailchimp .clear {
+     display: inline-block;
+  }
+  #mailchimp input {width: 320px; font-size: 15px;}
+  #mailchimp input[type="submit"]{width: 150%; font-size: 15px;}
+
+  #mailchimp {
+  text-align: left;
+  margin-top: 2rem;
   }
 
 }
 
+@media only screen and (min-width: 1920px) {
+  .mobileenterbutton p{
+    font-size: 1.5vw;
+  }
 
+  button:before {
+    font-size: 1.5vw;
+  }
 
+  #countdown {
+    font-size: 1.2vw;
+  }
 
+  .flagimg {
+    width: 49vw;
+    height: 48vw
+  }
 
+}
+
+@media only screen and (min-width: 2000px) {
+   .info {
+        font-size: 3.5em;
+        margin-right: 15rem;
+   }
+   .logo {
+        width: 20%;
+        margin-right:15rem;
+    }
+
+    .logo-members {
+        width: 20%;
+    }
+    #mailchimp input {width: 620px; font-size: 20px;}
+    #mailchimp input[type="submit"]{font-size: 20px;}
+
+}

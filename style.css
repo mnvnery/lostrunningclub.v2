@@ -323,9 +323,12 @@ a:hover {
 
   /* --------- LAYOUT --------- */
   .bottom-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 8rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    grid-template-areas: ". .";
+    margin: 1.2rem 10vw;
   }
 
   .mobile-flex {
